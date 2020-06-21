@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://kit.fontawesome.com/8262a57d41.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=no, maximum-scale=1.0">
+	<meta name="theme-color" content="#03A1F9">
+	<title>Contacto</title>
+	<link rel="icon" href="img/favicon.png">
+
+<!--ETIQUETAS META PRA LA PWA-->
+<!--configuración a nivel de html para que el navegador reconozca qeu esto es una PWA-->
+<!--COLOR DE LA APLICACION-->
+<meta name="theme-color" content="#03A1F9" />
+<!--OPTIMIZACIÓN PARA MOVIL-->
+<!--Lo que le estoy inidicando aquí es que la aplicacion esta optimizada a nivel de anchura y a nivel de responsive,con cualquier pantalla--> <meta name="MobileOptimized" content="width" />
+<!--Esta metaetiqueta está indicandole otros parámetros para que automaticamente el navegador de nuestro dispositivo movil sepa que esto es una PWA y funcione--> <meta name="HandheldFriendly" content="true" />
+
+<!--META ETIQUETAS PARA DISPOSITIVOS DE APPLE-->
+<!--Estas son las metas que tengo que configurar para que mi PWA funcione en iphone-->
+<!--esto seria para activar la PWA-->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!--Esto es para configurar la barra de estado de la aplicación -->
+<meta name="apple-moble-web-app-status-bar-style" content="black-translucent" />
+<!--Ahora vamos a configurar el icono para la PWA en un dispositivo de apple, esto es para cargar el favicon en los dispositivos de apple-->
+<link rel="apple-touch-icon" href="img/favicon.png" />
+<!-- Ahora vamos a configurar el espacio screen-->
+<link rel="apple-touch-startup-image" href="img/favicon.png" />
+
+<!--Configuración general de la PWA(MANIFIESTO)-->
+<link rel="manifest" href="manifest.json">
+	
+	<link rel="stylesheet" href="css/estiloscontact.css">
+	<!--estilos tablet-->
+	<link rel="stylesheet" href="css/tabletcontact.css">
+		<!--estilos celular-->
+	<link rel="stylesheet" href="css/celularcontact.css">
+
+	
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section --></head>
+<body>
+
+<header>
+	<img src="img/logofin.png"/>
+<input type="checkbox" id="btn-menu">
+   <label for="btn-menu"><span><i class="icono fas fa-bars"></i></span></label>
+
+<nav>
+	<ul>
+	<li><span><a href="index.html"><i class="icono fas fa-house-damage"></i><h2>Inicio</h2></a></span></li>
+	<li><span><a href="nosotros.html"><i class="icono fas fa-user-tie"></i><h2>Nosotros</h2></a></span></li>
+	<li><span><a href="servicios.html"><i class="icono fas fa-laptop-code"></i><h2>Servicios</h2></a></span></li>
+	<li><span><a href="contacto.html"><i class="icono fas fa-mobile-alt"></i><h2>Contactános</h2></a></span></li>
+</ul>
+</nav>
+
+</header>
+ 
+ <input type="checkbox" id="btn-whats">
+<label class="label-w" for="btn-whats"><span><img class="whats" src="img/whatsapp.png"/></span></label>
+
+<div class="cont-whats">
+<h2>Envianos un mensaje a nuestro Whatsapp</h2>
+	<a class="a-cerrar" href=""><i class="icono-cerrar fas fa-times-circle"></i></a>
+	<div class="numeros">
+	<a href="https://wa.me/525518717510?text=Hola,%20¿Me%20podrían%20brindar%20información?" target="_blank"><i class="icono-user fas fa-user"></i><p>Ing.Erick Cortes 5518717510</p></a>
+
+<a href="https://wa.me/525527949003?text=Hola,%20¿Me%20podrían%20brindar%20información?"  target="_blank"><i class="icono-user fas fa-user"></i><p>Ing.Cesar hernández 5527949003</p></a>
+</div>
+	</div>
+
+
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="106122974480855"
+  logged_in_greeting="Hola, ¿Cómo podemos ayudarte?"
+  logged_out_greeting="Hola, ¿Cómo podemos ayudarte?">
+      </div>
+	
+
+
+	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<div id="wowslider-container0">
+	<div class="ws_images"><ul>
+		<li><img src="data0/images/contacto.jpg" alt="diseno-web" title="Puedes contactárnos" id="wows0_0"/></li>
+		<li><img src="data0/images/contacto1.jpg" alt="diseño-web1" title="En nuestras redes sociales" id="wows0_1"/></li>
+		<li><img src="data0/images/contacto2.jpg" alt="css slideshow" title="O mediante nuestros números por whatsapp" id="wows0_2"/></a></li>
+		<li><img src="data0/images/contacto3.jpg" alt="paginas-web-gandia" title="Somos tu mejor opción" id="wows0_3"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="diseno-web"><span><img src="data0/tooltips/contacto.jpg" alt="diseno-web"/>1</span></a>
+		<a href="#" title="diseño-web1"><span><img src="data0/tooltips/contacto1.jpg" alt="diseño-web1"/>2</span></a>
+		<a href="#" title="diseño-web-en-ecuador"><span><img src="data0/tooltips/contacto2.jpg" alt="diseño-web-en-ecuador"/>3</span></a>
+		<a href="#" title="paginas-web-gandia"><span><img src="data0/tooltips/contacto4.jpg" alt="paginas-web-gandia"/>4</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">javascript slideshow</a> by WOWSlider.com v9.0</div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="engine0/wowslider.js"></script>
+	<script type="text/javascript" src="engine0/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+
+<div id="texto"><p>Puedes contactárnos mediante nuestras redes sociales, mapa o enviándonos un mensaje en el siguiente formulario:</p></div>
+<section>	
+	<form action="enviar.php" method="post" class="form-register">
+	<h4>Envíanos un mensaje</h4>
+	<input class="controls" type="text" name="nombre" id="nombre" placeholder="ingrese su nombre" required>
+	<input class="controls" type="text" name="telefono" id="telefono" placeholder="ingrese su telefono" required>
+	<input class="controls" type="text" name="correo" id="correo" placeholder="ingrese su correo" required>
+	<textarea class="text-area" type="text" name="mensaje" placeholder="Mensaje" required ></textarea> 
+		
+	<input class="botons" type="submit" value="Enviar" onclick="confirm('Se enviarán tus datos');">
+	
+	</form>
+
+	<img src="img/contacto.png" class="img-contacto"/>
+	
+
+</section>
+
+<iframe class="mapa" src="https://www.google.com/maps/d/embed?mid=1l9RPHX9whciVgtHFoLBQjL5PJXqjkIIG"></iframe>
+
+<svg class="curva-footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#20202F" fill-opacity="1" d="M0,192L80,192C160,192,320,192,480,160C640,128,800,64,960,37.3C1120,11,1280,21,1360,26.7L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+
+<footer>
+	<img class="logo-footer" src="img/logofin.png"/>	
+
+	<div class="cont-redes">
+		<div class="redes">
+      <a href="https://www.facebook.com/Aston-Web-Agency-106122974480855/" target="_blank"><img src="img/facebook.png"/></a>
+      <p>Facebook</p>
+  </div>
+
+  <div class="redes">
+      <img src="img/gmail.png"/>
+      <p>astonwebmexico@gmail.com</p>
+  </div>
+
+  <div class="redes">
+      <a href="https://www.instagram.com/astonweb/?hl=es-la" target="_blank"><img src="img/ins.png"/></a>
+      <p>Instagram</p>
+  </div>
+
+	</div>
+	<p>Derechos reservados Aston Web &copy;</p>
+</footer>
+
+
+	</body>
+</html>

@@ -1,0 +1,884 @@
+@media screen and (max-width: 769px){
+
+body{
+	margin: 0;
+	padding: 0;
+	padding-top: 50px;
+	font-family: sans-serif;
+} body::-webkit-scrollbar{
+	width: 8px;
+	height: 8px;
+} body::-webkit-scrollbar-thumb{
+	background-color: #E6E6E7;
+	border-radius:20px;
+} body::-webkit-scrollbar-track{
+    background-color: #20202F;
+}
+
+/*************************** tablet ****************************************************************************************/
+
+/* HEADER */
+header{
+	width: 100vw;
+	height: 50px;
+	position: fixed;
+	background-color: #20202F;
+	display: flex;
+	z-index: 10;
+	top: 0;
+} header img{
+	width: 100px;
+	height: 40px; 
+	align-self: center;
+}
+
+ header #btn-menu{
+	position: absolute;
+	margin-left: 95%;
+	align-self: center;
+	display: none;
+} header label{
+  position: absolute;
+  margin-left: 95%;
+    align-self: center;
+} header label .icono{
+   color: #03A1F9;
+   font-size: 30px;
+   transition: transform 1s;
+} header label .icono:hover{
+	color: #FFF;
+   transform: scale(0.8);
+   cursor: pointer;
+} header #btn-menu:checked ~ nav{
+  margin-left: 60%;
+  transition: all 0.5s;
+}  
+
+/**MENU***/
+nav{
+width: 40%;
+height: 100vh;
+position: absolute;
+margin-top: 20px;
+margin-left:100%;
+background-color: #20202F;
+z-index: -1;
+transition: all 1s;
+} nav ul{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	padding-top: 100px;
+} nav ul li{
+           list-style: none;
+           margin-bottom: 80px;
+           transition: 1s;
+		} nav ul li  span{
+          background-color: blue;
+		} nav ul li span a{
+		       width: 100%;
+			height: 50px;
+          text-decoration: none;
+          display: flex;
+		} nav ul li span a .icono{
+             color: #03A1F9;
+             font-size: 25px;
+             transition: transform 1s, color 1s;
+           
+			} nav ul li span a h2{
+             color: white;
+             font-size: 15px;
+             line-height: 0px;
+             margin-left: 20px;
+             transition: transform 1s, color 1s;
+          
+			} nav ul li:hover .icono, nav ul li:hover h2{
+				transform: scale(0.8);
+                 color: #FFF;
+			}
+
+/***************** WHATSAPP *******/
+
+ #btn-whats{
+	width: 40px;
+	height: 40px;
+  position: fixed;
+  margin-left: 90%;
+  margin-top: 200px;
+  z-index: 2;
+  display: none;
+}  .label-w{
+	position: fixed;
+	margin-left: 90%;
+  margin-top: 200px;
+ z-index: 2;
+} .label-w .whats{
+	width: 40px;
+	height: 40px;
+}  #btn-whats:hover{
+   cursor: pointer;
+}
+
+ #btn-whats:checked ~ .cont-whats{
+	margin-left: 20%;
+	transition: all 0.5s;
+}
+
+.cont-whats{
+	width: 60%;
+	height: 350px;
+	padding-top: 10px;
+	position: fixed;
+	border-radius: 30px;
+	margin-left: 100%;
+	border:5px solid #4CAF50;
+	background-color: #FFF;
+	display: flex;
+	flex-direction:column;
+	margin-top: 100px;
+	z-index: 3;
+	transition: all 0.5s;
+} .cont-whats .a-cerrar{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin-top:-55px;
+	margin-left: 45%;
+} .cont-whats .a-cerrar .icono-cerrar{
+  color: #4CAF50;
+  font-size: 30px;
+} .cont-whats .a-cerrar .icono-cerrar:hover{
+  color: #FFF;
+  font-size: 30px;
+} 
+
+.cont-whats h2{
+	color: #4CAF50;
+	text-align: center;
+	margin-bottom: 100px;
+}
+ .cont-whats .numeros {
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	 align-items: center;
+	flex-direction: column;
+}
+
+.cont-whats .numeros a{
+	text-align: center;
+   text-decoration: none;
+   display: flex;
+   line-height: 0px;
+   color: white;
+   margin-bottom: 30px;
+} .cont-whats .numeros a .icono-user{
+ font-size: 20px;
+ 	color: #4CAF50;
+}
+
+.cont-whats .numeros a p{
+  display: block;
+  margin-left: 20px;
+   font-size: 15px;
+   	color: #4CAF50;
+}
+
+/********************* formulario ****/
+section{
+	width: 100%;
+	height: auto;
+	display: flex;
+	margin-bottom: 100px;
+	justify-content: space-around;
+}
+
+
+#texto{
+	width: 90%;
+	text-align: justify;
+	margin:0 auto;
+} #texto p{
+	font-size: 18px;
+	line-height: 20px;
+	text-align: justify;
+	color: #333;
+	margin:0 auto;
+	margin-top: 50px;
+}
+
+
+
+
+
+.form-register{
+	width: 250px;
+	height: auto;
+	background-color: #20202F;
+	padding: 35px;
+	margin-top: 50px;
+	margin-left: 10px;
+	border-radius: 4px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: white;
+	box-shadow: 7px 13px 37px #000;
+	z-index: 1;
+} section .img-contacto{
+  width: 50%;
+	height: 350px;
+}
+
+h4{
+font-size: 22px;
+margin-bottom: 20px;
+text-align: center;
+margin-top: -20px;
+font-family: sans-serif;
+}
+
+.controls{
+	margin-top: 20px;
+	width: 100%;
+	background: none;
+	padding: 7px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	border: 1.5px solid #03A1F9;
+	font-family: sans-serif "Cambria", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 15px;
+	color: #FFF;
+} 
+
+.text-area{
+	margin-top: 20px;
+	width: 100%;
+	height: 40px;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 40px;
+	max-height: 40px;
+	overflow: auto;
+	background:none;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1.5px solid #03A1F9;
+	font-family: sans-serif "Cambria", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 18px;
+	color: #FFF;
+}
+
+.form-register .botons{
+	width: 100%;
+	background: #03A1F9;
+	border: none;
+	padding: 12px;
+	color:white;
+	margin: 16px 0;
+	font-size: 16px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	transition: background 1s, color 1s;
+} .form-register .botons:hover{
+    background: #FFF;
+    color:#03A1F9;
+    cursor: pointer;
+}
+
+
+.mapa{
+	width: 90%;
+	height: 450px;
+	margin: 0 auto;
+	display: block;
+
+}
+
+.btn-neon{
+position: relative;
+display: inline-block;
+padding: 15px 30px;
+color: black;
+letter-spacing: 4px;
+text-decoration: none;
+font-size: 24px;
+overflow: hidden;
+transition: 0.2s;
+}
+.btn-neon:hover{
+ background: #a945c7;
+ box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+ transition-delay: 1s;
+ }
+.btn-neon span{
+ position: absolute;
+ display: block;
+        }
+ #span1{
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent,#a945c7);
+ }
+ .btn-neon:hover #span1{
+ left: 100%;
+ transition: 1s;
+ }
+ #span3{
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(270deg, transparent,#a945c7);
+ }
+ .btn-neon:hover #span3{
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+  }
+  #span2{
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent,#a945c7);
+  }
+  .btn-neon:hover #span2{
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+  }
+  #span4{
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent,#a945c7);
+  }
+  .btn-neon:hover #span4{
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+  }
+
+
+
+
+
+/**** FOOTER **/
+
+footer{
+	width: 100%;
+	height: 400px;
+	background-color: #20202F;
+	margin-top: -10px;
+} .curva-footer{
+	position: relative;
+	z-index: -1;
+} footer .logo-footer{
+ margin: 0 auto;
+ width: 200px;
+ height: 80px;
+ display: block;
+ margin-bottom: 30px;
+}
+
+/*** redes***/
+
+footer .cont-redes{
+width: 25%;
+height: 200px;
+display: flex;
+flex-direction: column;
+margin:0 auto;
+overflow: hidden;
+justify-content: space-around;
+} footer .cont-redes .redes{
+	width: 100%
+	height:auto;
+	display: flex;
+}
+
+footer .cont-redes .redes img{
+	width: 50px;
+	height: 50px;
+	transition: transform 1s;
+} footer .cont-redes .redes img:hover{
+  transform: rotate(45deg);
+}  footer .cont-redes .redes p{
+  margin-left: 20px;
+  transition: margin-left 1s;
+}  
+
+footer p{
+	color: white;
+	text-align: center;
+}
+
+/***************************************************************************************************************************/
+
+}
+
+
+/**************************************tablet 2 **********************************************/
+
+@media screen and (max-width: 760px){
+
+
+
+/********************* formulario ****/
+section{
+	width: 100%;
+	height: auto;
+	display: flex;
+	margin-bottom: 100px;
+	justify-content: space-around;
+}
+
+
+#texto{
+	width: 90%;
+	text-align: justify;
+	margin:0 auto;
+} #texto p{
+	font-size: 18px;
+	line-height: 20px;
+	text-align: justify;
+	color: #333;
+	margin:0 auto;
+	margin-top: 50px;
+}
+
+
+
+
+
+.form-register{
+	width: 250px;
+	height: auto;
+	background-color: #20202F;
+	padding: 35px;
+	margin-top: 50px;
+	margin-left: 10px;
+	border-radius: 4px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: white;
+	box-shadow: 7px 13px 37px #000;
+	z-index: 1;
+} section .img-contacto{
+  width: 50%;
+	height: 350px;
+}
+
+h4{
+font-size: 22px;
+margin-bottom: 20px;
+text-align: center;
+margin-top: -20px;
+font-family: sans-serif;
+}
+
+.controls{
+	margin-top: 20px;
+	width: 100%;
+	background: none;
+	padding: 7px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	border: 1.5px solid #03A1F9;
+	font-family: sans-serif "Cambria", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 15px;
+	color: #FFF;
+} 
+
+.text-area{
+	margin-top: 20px;
+	width: 100%;
+	height: 40px;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 40px;
+	max-height: 40px;
+	overflow: auto;
+	background:none;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1.5px solid #03A1F9;
+	font-family: sans-serif "Cambria", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 18px;
+	color: #FFF;
+}
+
+.form-register .botons{
+	width: 100%;
+	background: #03A1F9;
+	border: none;
+	padding: 12px;
+	color:white;
+	margin: 16px 0;
+	font-size: 16px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	transition: background 1s, color 1s;
+} .form-register .botons:hover{
+    background: #FFF;
+    color:#03A1F9;
+    cursor: pointer;
+}
+
+
+.mapa{
+	width: 90%;
+	height: 450px;
+	margin: 0 auto;
+	display: block;
+
+}
+
+.btn-neon{
+position: relative;
+display: inline-block;
+padding: 15px 30px;
+color: black;
+letter-spacing: 4px;
+text-decoration: none;
+font-size: 24px;
+overflow: hidden;
+transition: 0.2s;
+}
+.btn-neon:hover{
+ background: #a945c7;
+ box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+ transition-delay: 1s;
+ }
+.btn-neon span{
+ position: absolute;
+ display: block;
+        }
+ #span1{
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent,#a945c7);
+ }
+ .btn-neon:hover #span1{
+ left: 100%;
+ transition: 1s;
+ }
+ #span3{
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(270deg, transparent,#a945c7);
+ }
+ .btn-neon:hover #span3{
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+  }
+  #span2{
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent,#a945c7);
+  }
+  .btn-neon:hover #span2{
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+  }
+  #span4{
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent,#a945c7);
+  }
+  .btn-neon:hover #span4{
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+  }
+
+
+
+
+}
+
+
+/********************************************* tablet 3 *****************************************/
+
+@media screen and (max-width: 700px){
+
+#btn-whats{
+	width: 40px;
+	height: 40px;
+  position: fixed;
+  margin-left: 90%;
+  margin-top: 200px;
+  z-index: 2;
+  display: none;
+}  .label-w{
+	position: fixed;
+	margin-left: 90%;
+  margin-top: 200px;
+ z-index: 2;
+} .label-w .whats{
+	width: 40px;
+	height: 40px;
+}  #btn-whats:hover{
+   cursor: pointer;
+}
+
+ #btn-whats:checked ~ .cont-whats{
+	margin-left: 20%;
+	transition: all 0.5s;
+}
+
+.cont-whats{
+	width: 60%;
+	height: 350px;
+	padding-top: 10px;
+	position: fixed;
+	border-radius: 30px;
+	margin-left: 100%;
+	border:5px solid #4CAF50;
+	background-color: #FFF;
+	display: flex;
+	flex-direction:column;
+	margin-top: 100px;
+	z-index: 3;
+	transition: all 0.5s;
+} .cont-whats .a-cerrar{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin-top:-55px;
+	margin-left: 45%;
+} .cont-whats .a-cerrar .icono-cerrar{
+  color: #4CAF50;
+  font-size: 30px;
+} .cont-whats .a-cerrar .icono-cerrar:hover{
+  color: #FFF;
+  font-size: 30px;
+} 
+
+.cont-whats h2{
+	color: #4CAF50;
+	text-align: center;
+	margin-bottom: 100px;
+}
+ .cont-whats .numeros {
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	 align-items: center;
+	flex-direction: column;
+}
+
+.cont-whats .numeros a{
+	text-align: center;
+   text-decoration: none;
+   display: flex;
+   line-height: 0px;
+   color: white;
+   margin-bottom: 30px;
+} .cont-whats .numeros a .icono-user{
+ font-size: 20px;
+ 	color: #4CAF50;
+}
+
+.cont-whats .numeros a p{
+  display: block;
+  margin-left: 20px;
+   font-size: 15px;
+   	color: #4CAF50;
+}
+
+/********************* formulario ****/
+section{
+	width: 100%;
+	height: auto;
+	display: flex;
+	margin-bottom: 100px;
+	justify-content: space-around;
+}
+
+
+#texto{
+	width: 90%;
+	text-align: justify;
+	margin:0 auto;
+} #texto p{
+	font-size: 18px;
+	line-height: 20px;
+	text-align: justify;
+	color: #333;
+	margin:0 auto;
+	margin-top: 50px;
+}
+
+
+
+
+
+.form-register{
+	width: 250px;
+	height: auto;
+	background-color: #20202F;
+	padding: 35px;
+	margin-top: 50px;
+	margin-left: 10px;
+	border-radius: 4px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: white;
+	box-shadow: 7px 13px 37px #000;
+	z-index: 1;
+} section .img-contacto{
+  width: 50%;
+	height: 300px;
+}
+
+h4{
+font-size: 22px;
+margin-bottom: 20px;
+text-align: center;
+margin-top: -20px;
+font-family: sans-serif;
+}
+
+.controls{
+	margin-top: 20px;
+	width: 100%;
+	background: none;
+	padding: 7px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	border: 1.5px solid #03A1F9;
+	font-family: sans-serif "Cambria", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 15px;
+	color: #FFF;
+} 
+
+.text-area{
+	margin-top: 20px;
+	width: 100%;
+	height: 40px;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 40px;
+	max-height: 40px;
+	overflow: auto;
+	background:none;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1.5px solid #03A1F9;
+	font-family: sans-serif "Cambria", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 18px;
+	color: #FFF;
+}
+
+.form-register .botons{
+	width: 100%;
+	background: #03A1F9;
+	border: none;
+	padding: 12px;
+	color:white;
+	margin: 16px 0;
+	font-size: 16px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	transition: background 1s, color 1s;
+} .form-register .botons:hover{
+    background: #FFF;
+    color:#03A1F9;
+    cursor: pointer;
+}
+
+
+.mapa{
+	width: 90%;
+	height: 450px;
+	margin: 0 auto;
+	display: block;
+
+}
+
+.btn-neon{
+position: relative;
+display: inline-block;
+padding: 15px 30px;
+color: black;
+letter-spacing: 4px;
+text-decoration: none;
+font-size: 24px;
+overflow: hidden;
+transition: 0.2s;
+}
+.btn-neon:hover{
+ background: #a945c7;
+ box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+ transition-delay: 1s;
+ }
+.btn-neon span{
+ position: absolute;
+ display: block;
+        }
+ #span1{
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent,#a945c7);
+ }
+ .btn-neon:hover #span1{
+ left: 100%;
+ transition: 1s;
+ }
+ #span3{
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(270deg, transparent,#a945c7);
+ }
+ .btn-neon:hover #span3{
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+  }
+  #span2{
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent,#a945c7);
+  }
+  .btn-neon:hover #span2{
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+  }
+  #span4{
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent,#a945c7);
+  }
+  .btn-neon:hover #span4{
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+  }
+
+
+
+	}

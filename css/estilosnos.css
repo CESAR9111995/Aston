@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+body{
+	margin: 0;
+	padding: 0;
+	padding-top: 50px;
+	font-family: sans-serif;
+} body::-webkit-scrollbar{
+	width: 8px;
+	height: 8px;
+} body::-webkit-scrollbar-thumb{
+	background-color: #E6E6E7;
+	border-radius:20px;
+} body::-webkit-scrollbar-track{
+    background-color: #20202F;
+}
+
+/*************************** ESCRITORIO ****************************************************************************************/
+
+/* HEADER */
+header{
+	width: 100vw;
+	height: 50px;
+	position: fixed;
+	background-color: #20202F;
+	display: flex;
+	z-index: 10;
+	top: 0;
+} header img{
+	width: 100px;
+	height: 40px; 
+	align-self: center;
+}
+
+ header #btn-menu{
+	position: absolute;
+	margin-left: 97%;
+	align-self: center;
+	display: none;
+} header label{
+  position: absolute;
+  margin-left: 97%;
+    align-self: center;
+} header label .icono{
+   color: #03A1F9;
+   font-size: 30px;
+   transition: transform 1s;
+} header label .icono:hover{
+   transform: scale(0.8);
+   cursor: pointer;
+} header #btn-menu:checked ~ nav{
+  margin-left: 70%;
+  transition: all 0.5s;
+}  
+
+/**MENU***/
+nav{
+width: 30%;
+height: 100vh;
+position: absolute;
+margin-top: 20px;
+margin-left:100%;
+background-color: #20202F;
+z-index: -1;
+transition: all 1s;
+} nav ul{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	padding-top: 100px;
+} nav ul li{
+           list-style: none;
+           margin-bottom: 80px;
+           transition: 1s;
+		} nav ul li  span{
+          background-color: blue;
+		} nav ul li span a{
+		       width: 100%;
+			height: 50px;
+          text-decoration: none;
+          display: flex;
+		} nav ul li span a .icono{
+             color: #03A1F9;
+             font-size: 30px;
+             transition: transform 1s, color 1s;
+           
+			} nav ul li span a h2{
+             color: white;
+             font-size: 20px;
+             line-height: 0px;
+             margin-left: 20px;
+             transition: transform 1s, color 1s;
+          
+			} nav ul li:hover .icono, nav ul li:hover h2{
+				transform: scale(0.8);
+                 color: #FFF;
+			}
+/***************** WHATSAPP *******/
+
+ #btn-whats{
+	width: 40px;
+	height: 40px;
+  position: fixed;
+  margin-left: 92%;
+  margin-top: 200px;
+  z-index: 2;
+  display: none;
+}  .label-w{
+	position: fixed;
+	margin-left: 93.8%;
+  margin-top: 200px;
+ z-index: 2;
+} .label-w .whats{
+	width: 55px;
+	height: 55px;
+}  #btn-whats:hover{
+   cursor: pointer;
+}
+
+ #btn-whats:checked ~ .cont-whats{
+	margin-left: 30%;
+	transition: all 0.5s;
+}
+
+.cont-whats{
+	width: 40%;
+	height: 350px;
+	padding-top: 10px;
+	position: fixed;
+	border-radius: 30px;
+	margin-left: 100%;
+	border:5px solid #4CAF50;
+	background-color: #FFF;
+	display: flex;
+	flex-direction:column;
+	margin-top: 100px;
+	z-index: 3;
+	transition: all 0.5s;
+} .cont-whats .a-cerrar{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin-top:-55px;
+	margin-left: 50%;
+} .cont-whats .a-cerrar .icono-cerrar{
+  color: #4CAF50;
+  font-size: 30px;
+} .cont-whats .a-cerrar .icono-cerrar:hover{
+  color: #FFF;
+  font-size: 30px;
+} 
+
+.cont-whats h2{
+	color: #4CAF50;
+	text-align: center;
+	margin-bottom: 100px;
+}
+ .cont-whats .numeros {
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	 align-items: center;
+	flex-direction: column;
+}
+
+.cont-whats .numeros a{
+	text-align: center;
+   text-decoration: none;
+   display: flex;
+   line-height: 0px;
+   color: white;
+   margin-bottom: 30px;
+} .cont-whats .numeros a .icono-user{
+ font-size: 30px;
+ 	color: #4CAF50;
+}
+
+.cont-whats .numeros a p{
+  display: block;
+  margin-left: 20px;
+   font-size: 15px;
+   	color: #4CAF50;
+}
+
+
+section{
+	height: auto;
+	
+}
+
+.title{
+	text-align: center;
+	font-size: 40px;
+	color: #03A1F9;
+	margin-top: 100px;
+	font-weight: bold;
+	font-family: 'Noto Sans', sans-serif;
+
+}
+#texto{
+
+}
+
+#texto p{
+	font-size: 20px;
+	line-height:30px;
+	text-align: justify;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	height: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+.container .card{
+	width: 390px;
+	height: 580px;
+	border-radius: 8px;
+	background-color: #FFF;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+	overflow: hidden;
+	margin: 50px;
+	text-align: center;
+	transition: all 0.25s;
+    box-shadow: 7px 13px 37px #000;
+	transition: transform 1s;
+}
+
+.container .card:hover{
+	
+	transform: translateY(-15px);
+	
+}
+
+.container .card img{
+	margin-top: 20px;
+	width: 190px;
+	height: 200px;
+}
+
+.container .card h4{
+	font-weight: bold;
+	color: #20202F;
+}
+
+.container .card p{
+	width: 80%;
+	margin:0 auto;
+	margin-bottom: 30px;
+	padding: 0 1rem;
+	font-size: 16px;
+	text-align: justify;
+	line-height: 20px;
+	color: #20202F;
+}
+
+#logo{
+	margin-top: -5px;
+	width: 120px;
+	height: 120px;
+	
+}
+
+#texto1{
+	width: 90%;
+	margin:0 auto;
+	margin-top:-400px;
+}
+#texto1 p{
+	font-size: 20px;
+	line-height: 30px;
+	text-align: justify;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+
+
+/**** FOOTER **/
+
+footer{
+	width: 100%;
+	height: 400px;
+	background-color: #20202F;
+	margin-top: -10px;
+} .curva-footer{
+	position: relative;
+} footer .logo-footer{
+ margin: 0 auto;
+ width: 300px;
+ height: 100px;
+ display: block;
+ margin-bottom: 30px;
+}
+
+/*** redes***/
+
+footer .cont-redes{
+width: 25%;
+height: 200px;
+display: flex;
+flex-direction: column;
+margin:0 auto;
+overflow: hidden;
+justify-content: space-around;
+} footer .cont-redes .redes{
+	width: 100%;
+	height:auto;
+	display: flex;
+} 
+
+footer .cont-redes .redes  img{
+	width: 50px;
+	height: 50px;
+	transition: transform 1s;
+} footer .cont-redes .redes img:hover{
+  transform: rotate(45deg);
+}  footer .cont-redes .redes p{
+  margin-left: -300px;
+  transition: margin-left 1s;
+}  footer .cont-redes .redes  img:hover ~ p{
+    margin-left: 20px;
+    transition: 0.5s;
+} footer .cont-redes .redes  img:hover ~ p{
+    margin-left: 20px;
+    transition: 0.5s;
+}
+
+footer p{
+	color: white;
+	text-align: center;
+}
+
+
+
+/***************************************** escritorio 2 *******************************/
+
+@media screen and (max-width: 1180px){
+
+.cont-whats .numeros a .icono-user{
+ font-size: 25px;
+ 	color: #4CAF50;
+}
+
+.cont-whats .numeros a p{
+  display: block;
+  margin-left: 20px;
+   font-size: 12px;
+   	color: #4CAF50;
+}
+	
+section{
+	height: 1000px;
+	
+}
+
+.title{
+	text-align: center;
+	font-size: 30px;
+	color: #03A1F9;
+	margin-top: 100px;
+	font-weight: bold;
+	font-family: 'Noto Sans', sans-serif;
+
+}
+#texto{
+
+}
+
+#texto p{
+	font-size: 20px;
+	line-height:25px;
+	text-align: justify;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+}
+
+.container .card{
+	width: 390px;
+	height: 580px;
+	border-radius: 8px;
+	background-color: #FFF;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+	overflow: hidden;
+	margin: 50px;
+	margin-bottom:10px;
+	text-align: center;
+	transition: all 0.25s;
+    box-shadow: 7px 13px 37px #000;
+	transition: transform 1s;
+}
+
+.container .card:hover{
+	
+	transform: translateY(-15px);
+	
+}
+
+.container .card img{
+	margin-top: 20px;
+	width: 190px;
+	height: 200px;
+}
+
+.container .card h4{
+	font-weight: bold;
+	color: #20202F;
+}
+
+.container .card p{
+	width: 80%;
+	margin:0 auto;
+	margin-bottom: 30px;
+	padding: 0 1rem;
+	font-size: 16px;
+	text-align: justify;
+	line-height: 20px;
+	color: #20202F;
+}
+
+#logo{
+	margin-top: -5px;
+	width: 120px;
+	height: 120px;
+	
+}
+
+#texto1{
+	width: 90%;
+	margin:0 auto;
+}
+#texto1 p{
+	font-size: 20px;
+	line-height: 20px;
+	text-align: justify;
+	margin-top: 100px;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+
+
+
+}
+
+
+/***************************************** escritorio 3 *******************************/
+
+@media screen and (max-width: 1100px){
+
+section{
+	height: 1800px;
+	
+}
+
+.title{
+	text-align: center;
+	font-size: 30px;
+	color: #03A1F9;
+	margin-top: 100px;
+	font-weight: bold;
+	font-family: 'Noto Sans', sans-serif;
+
+}
+#texto{
+
+}
+
+#texto p{
+	font-size: 20px;
+	line-height:25px;
+	text-align: justify;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+}
+
+.container .card{
+	width: 390px;
+	height: 580px;
+	border-radius: 8px;
+	background-color: #FFF;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+	overflow: hidden;
+	margin: 50px;
+	margin-bottom:10px;
+	text-align: center;
+	transition: all 0.25s;
+    box-shadow: 7px 13px 37px #000;
+	transition: transform 1s;
+}
+
+.container .card:hover{
+	
+	transform: translateY(-15px);
+	
+}
+
+.container .card img{
+	margin-top: 20px;
+	width: 190px;
+	height: 200px;
+}
+
+.container .card h4{
+	font-weight: bold;
+	color: #20202F;
+}
+
+.container .card p{
+	width: 80%;
+	margin:0 auto;
+	margin-bottom: 30px;
+	padding: 0 1rem;
+	font-size: 16px;
+	text-align: justify;
+	line-height: 20px;
+	color: #20202F;
+}
+
+#logo{
+	margin-top: -5px;
+	width: 120px;
+	height: 120px;
+	
+}
+
+#texto1{
+	width: 90%;
+	margin:0 auto;
+}
+#texto1 p{
+	font-size: 20px;
+	line-height: 20px;
+	text-align: justify;
+	margin-top: 100px;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+}
+
+/*********************************ESCRITORIO 4 ******************************************/
+@media screen and (max-width: 932px) {
+
+
+.cont-whats .numeros a .icono-user{
+ font-size: 20px;
+ 	color: #4CAF50;
+}
+
+.cont-whats .numeros a p{
+  display: block;
+  margin-left: 20px;
+   font-size: 10px;
+   	color: #4CAF50;
+}
+
+section{
+	height: 1800px;
+	
+}
+
+.title{
+	text-align: center;
+	font-size: 30px;
+	color: #03A1F9;
+	margin-top: 100px;
+	font-weight: bold;
+	font-family: 'Noto Sans', sans-serif;
+
+}
+#texto{
+
+}
+
+#texto p{
+	font-size: 20px;
+	line-height:25px;
+	text-align: justify;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+}
+
+.container .card{
+	width: 390px;
+	height: 580px;
+	border-radius: 8px;
+	background-color: #FFF;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+	overflow: hidden;
+	margin: 50px;
+	margin-bottom:10px;
+	text-align: center;
+	transition: all 0.25s;
+    box-shadow: 7px 13px 37px #000;
+	transition: transform 1s;
+}
+
+.container .card:hover{
+	
+	transform: translateY(-15px);
+	
+}
+
+.container .card img{
+	margin-top: 20px;
+	width: 190px;
+	height: 200px;
+}
+
+.container .card h4{
+	font-weight: bold;
+	color: #20202F;
+}
+
+.container .card p{
+	width: 80%;
+	margin:0 auto;
+	margin-bottom: 30px;
+	padding: 0 1rem;
+	font-size: 16px;
+	text-align: justify;
+	line-height: 20px;
+	color: #20202F;
+}
+
+#logo{
+	margin-top: -5px;
+	width: 120px;
+	height: 120px;
+	
+}
+
+#texto1{
+	width: 90%;
+	margin:0 auto;
+}
+#texto1 p{
+	font-size: 20px;
+	line-height: 20px;
+	text-align: justify;
+	margin-top: 100px;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+
+}

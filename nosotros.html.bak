@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://kit.fontawesome.com/8262a57d41.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=no, maximum-scale=1.0">
+	<title>Inicio</title>
+	<link rel="stylesheet" href="css/estilosnos.css">
+	<!--estilos tablet-->
+	<link rel="stylesheet" href="css/tabletnos.css">
+		<!--estilos celular-->
+	<link rel="stylesheet" href="css/celularnos.css">
+
+	</head>
+<body>
+
+<header>
+	<img src="img/logofin.png"/>
+<input type="checkbox" id="btn-menu">
+   <label for="btn-menu"><span><i class="icono fas fa-bars"></i></span></label>
+
+<nav>
+	<ul>
+	<li><span><a href="inicio.html"><i class="icono fas fa-house-damage"></i><h2>Inicio</h2></a></span></li>
+	<li><span><a href="nosotros.html"><i class="icono fas fa-user-tie"></i><h2>Nosotros</h2></a></span></li>
+	<li><span><a href="#"><i class="icono fas fa-laptop-code"></i><h2>Servicios</h2></a></span></li>
+	<li><span><a href="#"><i class="icono fas fa-mobile-alt"></i><h2>Contactános</h2></a></span></li>
+</ul>
+</nav>
+
+</header>
+ 
+ <input type="checkbox" id="btn-whats">
+<label class="label-w" for="btn-whats"><span><img class="whats" src="img/whatsapp.png"/></span></label>
+
+<div class="cont-whats">
+<h2>Envianos un mensaje a nuestro Whatsapp</h2>
+	<a class="a-cerrar" href=""><i class="icono-cerrar fas fa-times-circle"></i></a>
+	<div class="numeros">
+	<a href="https://wa.me/525518717510?text=Hola,%20¿Me%20podrían%20brindar%20información?" target="_blank"><i class="icono-user fas fa-user"></i><p>Ing.Erick Cortes 5518717510</p></a>
+
+<a href="https://wa.me/525527949003?text=Hola,%20¿Me%20podrían%20brindar%20información?"  target="_blank"><i class="icono-user fas fa-user"></i><p>Ing.Cesar hernández 5527949003</p></a>
+</div>
+	</div>
+	
+
+<section>	
+
+
+</section>
+
+
+
+
+<footer>
+	<img class="logo-footer" src="img/logofin.png"/>	
+
+	<div class="cont-redes">
+		<div class="redes">
+      <img src="img/facebook.png"/>
+      <p>Facebook</p>
+  </div>
+
+  <div class="redes">
+      <img src="img/gmail.png"/>
+      <p>astonwebmexico@gmail.com</p>
+  </div>
+
+  <div class="redes">
+      <img src="img/ins.png"/>
+      <p>Instagram</p>
+  </div>
+
+	</div>
+	<p>Derechos reservados Aston Web &copy;</p>
+</footer>
+
+
+	</body>
+</html>
